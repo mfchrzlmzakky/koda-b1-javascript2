@@ -21,4 +21,3 @@ const { nama, email, totalHarga, statusPembayaran } = fakturPembayaran;
 
 // SOAL NOMOR 3
 console.log(`Struk dicetak untuk ${nama} (${email}) dengan total tagihan Rp ${totalHarga} dan status pembayaran ${statusPembayaran}`);
-
