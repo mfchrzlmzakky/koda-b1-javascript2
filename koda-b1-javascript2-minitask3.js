@@ -1,25 +1,16 @@
-// Function Deklaratif
-function buatProfile(nama, umur) {
-  return {
-    namaLengkap: nama,
-    usia: umur,
-    kategori: umur >= 18 ? "Dewasa" : "Anak",
-  };
+const round = {
+  radius: 7,
+  area: function (a, b) {
+    return a * b * b;
+  },
+  circumference: function (a, b) {
+    return 2 * a * b;
+  },
+};
+
+function ringkasan(a, b) {
+  console.log(round.area(a, b));
+  console.log(round.circumference(a, b));
 }
-console.log(buatProfile("Budi", 20));
 
-// Anonymous Function
-const buatProfile2 = function (nama, umur) {
-  return {
-    namaLengkap: nama,
-    usia: umur,
-    kategori: umur >= 18 ? "Dewasa" : "Anak",
-  };
-};
-console.log(buatProfile("Budi", 17));
-
-// Arrow Function
-const buatProfile3 = (nama, umur) => {
-  return { namaLengkap: nama, usia: umur, kategori: umur >= 18 ? "Dewasa" : "Anak" };
-};
-console.log(buatProfile("Budi", 21));
+ringkasan(3.14, 7);
