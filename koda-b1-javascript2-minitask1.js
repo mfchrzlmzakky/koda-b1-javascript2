@@ -1,4 +1,6 @@
-let angka = [1, 2, 3, 4, 5, 6, 7];
+let angka1 = [1, 2, 3, 4];
+let angka2 = [5, 6, 7];
+let angka = [...angka1, ...angka2];
 let panjangArray = 0;
 let totalArray = 0;
 let max = 1;
