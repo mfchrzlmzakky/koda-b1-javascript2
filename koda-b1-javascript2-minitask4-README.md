@@ -15,8 +15,8 @@ proses3[Fungsi calculate]
 subgraph Callback
 proses3[Fungsi calculate]
 output1[Tampilkan area]
-end
 output2[Tampilkan circumference]
+end
 selesai(((end)))
 start-->input1-->proses1-->proses2-->proses3-->output1-->output2-->selesai
 ```
