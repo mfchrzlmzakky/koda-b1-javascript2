@@ -1,16 +1,16 @@
 const round = {
   radius: 7,
-  area: function (a, b) {
-    return a * b * b;
+  area: function () {
+    return 3.14 * this.radius * this.radius;
   },
-  circumference: function (a, b) {
-    return 2 * a * b;
+  circumference: function () {
+    return 2 * 3.14 * this.radius;
   },
 };
 
-const ringkasan = (a, b) => {
-  console.log(`Luas Lingkaran = ${round.area(a, b)}`);
-  console.log(`Keliling Lingkaran = ${round.circumference(a, b)}`);
+const ringkasan = () => {
+  console.log(`Luas Lingkaran = ${round.area()}`);
+  console.log(`Keliling Lingkaran = ${round.circumference()}`);
 };
 
-ringkasan(3.14, 7);
+ringkasan();
