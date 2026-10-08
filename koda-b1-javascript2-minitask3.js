@@ -8,9 +8,9 @@ const round = {
   },
 };
 
-function ringkasan(a, b) {
+const ringkasan = (a, b) => {
   console.log(round.area(a, b));
   console.log(round.circumference(a, b));
-}
+};
 
 ringkasan(3.14, 7);
