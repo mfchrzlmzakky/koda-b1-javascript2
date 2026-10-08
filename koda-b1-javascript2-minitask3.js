@@ -9,8 +9,8 @@ const round = {
 };
 
 const ringkasan = (a, b) => {
-  console.log(round.area(a, b));
-  console.log(round.circumference(a, b));
+  console.log(`Luas Lingkaran = ${round.area(a, b)}`);
+  console.log(`Keliling Lingkaran = ${round.circumference(a, b)}`);
 };
 
 ringkasan(3.14, 7);
