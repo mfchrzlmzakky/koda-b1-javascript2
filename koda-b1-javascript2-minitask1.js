@@ -1,17 +1,17 @@
 let angka1 = [1, 2, 3, 4];
-let angka2 = [5, 6, 7];
+let angka2 = [5, 6, 7, 8];
 let angka = [...angka1, ...angka2];
 let panjangArray = 0;
 let totalArray = 0;
-let max = 1;
+let max = 0;
 let min = 1;
-let average = 1;
+let average = 0;
 
 console.log(`Semua Nilai = ${angka}`);
 
 // MAX
 let i = 0;
-while (angka[i] !== undefined) {
+while (i < angka.length) {
   if (angka[i] > max) {
     max = angka[i];
   }
@@ -21,7 +21,7 @@ console.log(`Nilai max = ${max}`);
 
 // MIN
 let j = 0;
-while (angka[j] !== undefined) {
+while (j < angka.length) {
   if (angka[j] < min) {
     min = angka[j];
   }
@@ -31,7 +31,7 @@ console.log(`Nilai min = ${min}`);
 
 // AVERAGE
 let k = 0;
-while (angka[k] !== undefined) {
+while (k < angka.length) {
   panjangArray += 1;
   totalArray += angka[k];
   k++;
